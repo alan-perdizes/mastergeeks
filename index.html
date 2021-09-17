@@ -3,30 +3,92 @@
   <head>
     <title>Aulas das supergeeks</title>
     <meta charset="utf-8" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,600;1,800&display=swap');
+
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Open Sans', sans-serif;
+        box-sizing: border-box;
+      }
+
+      body {
+        padding: 30px 20px;
+        background-image: 
+          url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/7dbfc100-18a1-408b-a95e-23b28eb59678/d6msqc3-230b9f3d-5dad-4dcb-bc98-53fd85555dd6.png"),
+
+          url("https://previews.123rf.com/images/audiohead/audiohead1108/audiohead110800037/10272495-blue-tiles-in-bathroom-with-water-drops.jpg")
+          ;
+        background-size: 100px;
+        height: 100vh;
+      }
+      /*
+        R = Red, G = green, B = blue, A = Alpha
+      */
+      .container {
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 20px;
+        height: 100%;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+        text-indent: bol;
+        font-weight: 700;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      .btn-projects a {
+        color: rgb(228, 228, 228);
+        text-decoration: none;
+        background-color: rgb(33, 90, 165);
+        font-size: 18pt;
+        padding: 10px 30px;
+        border: 1px solid hsla(214, 67%, 19%, 0.2);
+        margin: 5px 0;
+        display: block;
+        transition: all 100ms ease-in;
+      }
+
+      .btn-projects a:hover {
+        background-color: hsl(214, 67%, 70%);
+      }
+
+    </style>
   </head>
   <body>
-    <header>
-
-    </header>
-    <main>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi enim laudantium ipsa quia a fuga quasi, esse aspernatur obcaecati porro aut accusantium molestias numquam ut nulla delectus modi exercitationem totam.</p>
-      <ul>
-        <li>
-          <a href="/mastergeeks/aula 01/index.html">Aula 01</a>
-        </li>
-        <li>
-          <a href="/mastergeeks/aula 02/index.html">Aula 02</a>
-        </li>
-        <li>
-          <a href="/mastergeeks/aula 03/index.html">Aula 03</a>
-        </li>
-        <li>
-          <a href="/mastergeeks/aula 04/index.html">Aula 04</a>
-        </li>
-        <li>
-          <a href="/mastergeeks/aula 05/index.html">Aula 05</a>
-        </li>
-      </ul>
+    <div class="container">
+      <header>
+        <h1>SuperGeeks</h1>
+      </header>
+      <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi enim laudantium ipsa quia a fuga quasi, esse aspernatur obcaecati porro aut accusantium molestias numquam ut nulla delectus modi exercitationem totam.</p>
+        <ul>
+          <li class="btn-projects">
+            <a href="/mastergeeks/aula 01/index.html">Aula 01</a>
+          </li>
+          <li class="btn-projects">
+            <a href="/mastergeeks/aula 02/index.html">Aula 02</a>
+          </li>
+          <li class="btn-projects">
+            <a href="/mastergeeks/aula 03/index.html">Aula 03</a>
+          </li>
+          <li class="btn-projects">
+            <a href="/mastergeeks/aula 04/index.html">Aula 04</a>
+          </li>
+          <li class="btn-projects">
+            <a href="/mastergeeks/aula 05/index.html">Aula 05</a>
+          </li>
+        </ul>
+      </div>
     </main>
   </body>
 </html>
