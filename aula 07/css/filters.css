@@ -1,0 +1,103 @@
+:root {
+  --color-background: 0;
+  --value-blur: 0;
+  --value-brightness: 100%;
+}
+
+.select-filter {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container img {
+  filter: 
+    blur(var(--value-blur))
+    brightness(var(--value-brightness));
+}
+
+.display-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 1;
+}
+
+.menu-effects {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.menu-effects input[type=range] {
+  width: 100%;
+}
+
+.menu-effects-list ul {
+  display: flex;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  list-style: none;
+  gap: 0 10px;
+}
+
+.menu-effects-list ul li {
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid white;
+  border-radius: 3px;
+  width: 80px;
+
+  align-items: center;
+  padding: 1px 50px;
+
+  color: white;
+
+  transition: all 200ms ease;
+}
+
+.menu-effects-list ul li:hover, .menu-effects-list-active {
+  background-color: white !important;
+  color: black !important;
+}
+
+.menu-effects-display div {
+  padding: 10px 10px;
+}
+
+.display-blur {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.image-button-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 10px 0;
+}
+
+.image-button-container label {
+  
+  border: 1px solid white;
+  color: white;
+  background-color: black;
+  border-radius: 2px;
+  transition: 200ms ease;
+  padding: 5px 10px;
+}
+
+.image-button-container label:hover {
+  border: 1px solid white;
+  color: black;
+  background-color: white;
+}

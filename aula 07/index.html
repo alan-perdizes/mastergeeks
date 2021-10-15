@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aula 07</title>
+
+  <link rel="stylesheet" href="css/filters.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
+
+</head>
+<body>
+  <div class="container select-filter">
+    <section class="image-container">
+      <header class="image-button-container">
+        <label for="image-file-preview">Escolher uma imagem</label>
+        <input type="file" name="image-file-preview" id="image-file-preview" accept="image/jpeg, image/png">
+      </header>
+      <main class="display-picture">
+        <img src="http://s2.glbimg.com/lTUhRSG_HLiZm_hnV0PtPVRY1dw=/e.glbimg.com/og/ed/f/original/2016/04/05/2c.jpg" id="image-preview"/>
+      </main>
+      <footer>
+        <nav class="menu-effects">
+        <div class="menu-effects-list">
+          <ul>
+            <li class="menu-effects-list-active" data-target="#display-blur">
+              <span class="material-icons">turned_in_not</span>
+              <span>Blur</span>
+            </li>
+            <li data-target="#display-brighness">
+              <span class="material-icons">turned_in_not</span>
+              <span>brightness</span>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-effects-display">
+          <div class="display-blur active" id="display-blur">
+            <input type="range" min="0" max="25" id="value-blur" value="0"/>
+          </div>
+          <div class="display-blur" id="display-brighness">
+            <input type="range" min="0" max="100" id="value-brightness" value="100"/>
+          </div>
+        </div>
+        <!-- <div>
+          <label for="value-blur">Blur</label>
+          <input type="range" min="0" max="25" id="value-blur" value="0"/>
+        </div>
+        <div>
+          <label for="value-brightness">Brightness</label>
+          <input type="range" min="0" max="100" id="value-brightness" value="100"/>
+        </div> -->
+      </nav>
+      </footer>
+    </section>
+  </div>
+  <script src="js/filterController.js"></script>
+</body>
+</html>
